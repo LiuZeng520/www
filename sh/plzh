@@ -1,0 +1,25 @@
+#!/bin/bash
+function Cnm(){
+s1=1;s2=1;a=$[$1-$2+1]
+for ((n=$a;n<=$1;n++));do
+        let s1=s1*n;done
+for ((m=1;m<=$2;m++));do
+        let s2=s2*m;done
+s1=$[$s1 / $s2]
+}
+function Anm(){
+s1=1;a=$[$1-$2+1]
+for ((n=$a;n<=$1;n++));do
+        let s1=s1*n;done
+}
+if [ $1 == "-C" ] &> /dev/null;then
+	shift
+	Cnm $1 $2
+	echo $s1
+elif [ $1 == "-A" ] &> /dev/null ;then
+	shift
+	Anm $1 $2
+	echo $s1
+else
+	echo "错误的选项"
+fi
