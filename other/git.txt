@@ -1,0 +1,21 @@
+$ git init
+
+$ git config --global user.name "LiuZeng520"
+
+$ git config --global user.email "1695816894@qq.com"
+
+$ git config --list
+
+$ git remote add origin https://github.com/LiuZeng520/www.git
+
+$ git fetch origin master
+
+$ git checkout -b dev origin/master
+
+$ git pull origin master
+
+$ git add .
+
+$ git commit -m "test"
+
+$ git push origin dev
