@@ -12,20 +12,20 @@ try:
     password = sys.argv[2]
     enterprise = sys.argv[3]
 except IndexError:
-    workname = "admin"
-    password = "000000"
-    enterprise = "admin001"
+    workname = "xxx"
+    password = "xxx"
+    enterprise = "xxx"
 try:
     server = sys.argv[4]
 except IndexError:
-    server = "e"
+    server = "xxx"
 # 打开Chrome
 options = webdriver.ChromeOptions()
 options.add_argument('--no-sandbox')
 options.add_argument('--headless')
 options.add_argument('--disable-dev-shm-usage')
 wd = webdriver.Chrome(chrome_options=options)
-authLogInUrl = 'https://{0}.jifenzhi.com/'.format(server, )
+authLogInUrl = 'https://{0}.xxx.com/'.format(server, )
 wd.get(authLogInUrl)
 
 
