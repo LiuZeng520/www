@@ -1,1 +1,0 @@
-/root/sh/README.md
