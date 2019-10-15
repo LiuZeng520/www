@@ -22,7 +22,7 @@ except IndexError:
 try:
     server = sys.argv[4]
 except IndexError:
-    server = "auth"
+    server = "xxx"
 # 打开Chrome
 options = webdriver.ChromeOptions()
 options.add_argument('--no-sandbox')
