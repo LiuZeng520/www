@@ -2,7 +2,7 @@
 import requests
 import json
 
-# es_host = '172.22.1.55'  # Elasticsearch访问地址
+es_host = 'xx.xx.xx.xx'  # Elasticsearch访问地址
 
 
 def delete_es(es_host):
@@ -33,5 +33,4 @@ def delete_es(es_host):
     print(response.json())
 
 
-for es_host in range(54, 57):
-    print(es_host)
+
