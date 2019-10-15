@@ -16,9 +16,9 @@ try:
     password = sys.argv[2]
     enterprise = sys.argv[3]
 except IndexError:
-    workname = "xch"
-    password = "000000"
-    enterprise = "xch"
+    workname = "xxx"
+    password = "xxx"
+    enterprise = "xxx"
 try:
     server = sys.argv[4]
 except IndexError:
@@ -29,7 +29,7 @@ options.add_argument('--no-sandbox')
 options.add_argument('--headless')
 options.add_argument('--disable-dev-shm-usage')
 wd = webdriver.Chrome(chrome_options=options)
-authLogInUrl = 'https://{0}.jifenzhi.com/'.format(server, )
+authLogInUrl = 'https://{0}.xxx.com/'.format(server, )
 wd.get(authLogInUrl)
 
 
@@ -104,8 +104,8 @@ def print_web(i_2):
 sleep(1)
 try:
     a = wd.find_element_by_xpath('//*[@id="container"]/div/div/div[2]/div[2]/div[2]/span[2]/span[1]/a').text
-    if a == "工作台":
-        print("正常进入首页")
+    if a == "xxx":
+        print("xxx")
 except Exception:
     login_error_div('//*[@id="login"]/div/div[5]')
     login_error_div('// *[ @ id = "container"]')
