@@ -6,10 +6,6 @@ which jq &> /dev/null || yum install -y jq &> /dev/null
 
 json_html=`curl -s http://${ip}:${port}/health`
 
-if [ "${json_html}" == "" ];then
-    json_html=`curl -s http://${ip}:${port}/api/emdm/health`
-fi
-
 Stat=`echo $json_html | jq -r .status`
 
 if [ "$Stat" == "UP" ];then
